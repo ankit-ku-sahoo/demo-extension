@@ -1,0 +1,31 @@
+{
+    "name": "Clickable Links List",
+    "description": "Build an Extension!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting"],
+    "content_scripts": [
+    {
+        "matches": ["https://*/*"],
+        "js": ["content.js"]
+    }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/time-management.png",
+            "32": "/images/time-management.png",
+            "48": "/images/time-management.png",
+            "128": "/images/time-management.png"
+          }
+    },
+    "icons": {
+        "16": "/images/time-management.png",
+        "32": "/images/time-management.png",
+        "48": "/images/time-management.png",
+        "128": "/images/time-management.png"
+      }
+}

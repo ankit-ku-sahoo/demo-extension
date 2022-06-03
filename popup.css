@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+}
+
+#newText {
+  text-align: center;
+  margin: 10px;
+}
+
+button {
+    height: 30px;
+    width: max-content;
+    outline: none;
+    margin: 10px auto;
+    border-radius: 2px;
+  }
+  
+  button.current {
+    box-shadow: 0 0 0 2px white,
+                0 0 0 4px black;
+  }
